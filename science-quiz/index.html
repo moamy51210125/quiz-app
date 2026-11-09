@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#eaf7ff">
+  <title>わくわく理科クイズ｜小学3年生</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="quiz-card">
+    <header class="quiz-header">
+      <p class="eyebrow">小学3年生向け</p>
+      <h1>わくわく理科クイズ</h1>
+      <p class="intro">身のまわりのふしぎにチャレンジ！</p>
+    </header>
+
+    <section id="quiz-screen" aria-labelledby="question">
+      <div class="progress-row">
+        <p id="progress" class="progress"></p>
+        <span class="progress-icon" aria-hidden="true">🔎</span>
+      </div>
+      <div class="progress-track" aria-hidden="true">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+      <h2 id="question" class="question"></h2>
+      <div id="choices" class="choices"></div>
+      <p id="feedback" class="feedback" aria-live="polite"></p>
+      <button id="next-button" class="primary-button" type="button" hidden>次の問題へ</button>
+    </section>
+
+    <section id="result-screen" aria-labelledby="result-heading" hidden>
+      <div class="result-sparkle" aria-hidden="true">🌟</div>
+      <h2 id="result-heading" class="result-heading">チャレンジ結果</h2>
+      <p id="score" class="score"></p>
+      <p id="result-message" class="result-message"></p>
+      <button id="restart-button" class="primary-button" type="button">もう一度最初から</button>
+      <button id="retry-wrong-button" class="secondary-button" type="button">間違えた問題を解く</button>
+    </section>
+    <footer>全30問から、毎回ちがう10問が出るよ</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
